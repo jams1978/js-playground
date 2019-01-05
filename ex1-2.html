@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>BMI(Body Mass Index) Calculator</h1>
+    
+    <script>
+        document.write("키와 몸무게로 계산한 대략적인 체지방 지수이다. BMI 지수는 쉽게 잴 수 있는 키와 몸무게만으로 간단히 추정할 수 있어서 유리하다. 하지만 기계를 이용해 직접적으로 체지방을 잰 것이 아니라서 엄밀하지 않다.");
+        // Input from user
+        console.log("BMI Calculaotr");
+        var inputWeight = prompt("몸무게를 kg 단위로 입력해 주세요.");
+        inputWeight = Number(inputWeight);
+        var inputHeight = prompt("키를 m 단위로 입력해 주세요.");
+        inputHeight = Number(inputHeight);
+
+        // Calculate
+        var BMI = inputWeight / (inputHeight*inputHeight) * 10000;
+
+        // Render
+        console.log("몸무게 = " + inputWeight + "kg, 키 = " + inputHeight + "cm로 계산된 BMI = " + BMI + "입니다.");
+        document.write("몸무게 = " + inputWeight + "kg, 키 = " + inputHeight + "cm로 계산된 BMI = " + BMI + "입니다.");
+    </script>
+</body>
+</html>
